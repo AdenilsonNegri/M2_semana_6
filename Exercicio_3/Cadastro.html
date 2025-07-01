@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Celulares</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Cadastro de Celulares</h1>
+    <form id="formCelular">
+
+      <label for="marca">Marca:</label>
+      <select id="marca" name="marca">
+        <option value="">Selecione...</option>
+        <option value="Samsung">Samsung</option>
+        <option value="iPhone">iPhone</option>
+        <option value="Motorola">Motorola</option>
+        <option value="LG">LG</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="Outros">Outros</option>
+      </select>
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo do celular" />
+
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" name="cor" placeholder="Ex: Preto, Azul, Vermelho" />
+
+      <label for="valor">Valor (R$):</label>
+      <input type="number" id="valor" name="valor" placeholder="Digite o valor de venda" />
+
+      <label>Estado do aparelho:</label>
+      <div class="radio-group">
+        <input type="radio" id="novo" name="estado" value="Novo" />
+        <label for="novo">Novo</label>
+        <input type="radio" id="usado" name="estado" value="Usado" />
+        <label for="usado">Usado</label>
+      </div>
+
+      <label for="info">Demais informações:</label>
+      <textarea id="info" name="info" placeholder="Digite informações adicionais..."></textarea>
+
+      <div class="buttons">
+        <button type="submit" id="btnSalvar" disabled>Salvar</button>
+        <button type="button" class="back" onclick="window.location.href='listagem.html'">Voltar</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="Cadastro.js"></script>
+</body>
+</html>
