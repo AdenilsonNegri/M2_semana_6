@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f0f0;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      padding: 8px;
+      width: 250px;
+    }
+    button {
+      padding: 8px 16px;
+      margin-left: 8px;
+    }
+    ul {
+      margin-top: 20px;
+      padding-left: 0;
+    }
+    li {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .excluir {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .tarefa-texto {
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lista de Tarefas</h1>
+
+  <label for="tarefa">Tarefa:</label>
+  <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+  <button id="adicionarBtn">Adicionar</button>
+
+  <h2>A Fazer</h2>
+  <ul id="listaTarefas"></ul>
+
+  <h2>Tarefas Concluídas</h2>
+  <ul id="listaConcluidas"></ul>
+
+  <script src="Lista_Tarefas_3.js"></script>
+</body>
+</html>
