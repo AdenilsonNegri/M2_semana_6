@@ -52,7 +52,7 @@ form.addEventListener("submit", function (e) {
 
   form.reset();
   btnSalvar.disabled = true;
-  window.location.href = "Listagem_Celulares_3.html";
+  window.location.href = "../Exercicio_5/Listagem_Celulares_3.html";
 });
 // Pré-preencher se estiver editando
 if (indiceEdicao !== null) {

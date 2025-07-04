@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #000;
+  margin: 20px;
+}
+body.tema-escuro {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+.tema-escuro input,
+.tema-escuro select,
+.tema-escuro textarea {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border: 1px solid #444;
+}
+
+.tema-escuro button {
+  background-color: #444 !important;
+  color: #fff;
+}
+
+.tema-botao {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+/* Cores da tabela no tema escuro */
+.tema-escuro table {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border-collapse: collapse;
+}
+
+/* Cabeçalho da tabela */
+.tema-escuro th {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+/* Células */
+.tema-escuro td {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+/* Linhas alternadas */
+.tema-escuro tr:nth-child(even) td {
+  background-color: #2a2a2a;
+}
+
+/* Hover */
+.tema-escuro tr:hover td {
+  background-color: #1a1818;
+}
+/* Títulos e textos no tema escuro */
+.tema-escuro h1,
+.tema-escuro h2,
+.tema-escuro h3,
+.tema-escuro p,
+.tema-escuro label {
+  color: #f5f5f5;
+}
+
+/* Botões de ação como "Alterar", "Excluir", "Cadastrar" */
+.tema-escuro .btn-excluir,
+.tema-escuro .btn-alterar,
+.tema-escuro .btn-cadastrar {
+  background-color: #555;
+  color: white;
+}
+
+/* Para tabelas centralizadas */
+.tema-escuro .buttons button {
+  background-color: #444;
+  color: #fff;
+}
